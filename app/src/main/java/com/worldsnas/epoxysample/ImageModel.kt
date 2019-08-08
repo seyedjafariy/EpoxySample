@@ -2,6 +2,7 @@ package com.worldsnas.epoxysample
 
 import android.widget.ImageView
 import com.bumptech.glide.Glide
+import com.bumptech.glide.request.RequestOptions
 
 data class ImageModel(
     val imageURL: String
@@ -14,6 +15,7 @@ data class ImageModel(
     override fun bind() {
         Glide.with(image)
             .load(imageURL)
+            .apply(RequestOptions.overrideOf(1200, 1000))
             .into(image)
     }
 }
