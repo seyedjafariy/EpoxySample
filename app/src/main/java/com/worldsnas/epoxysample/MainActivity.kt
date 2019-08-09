@@ -2,6 +2,7 @@ package com.worldsnas.epoxysample
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -22,6 +23,7 @@ class MainActivity : AppCompatActivity() {
         "https://unsplash.com/photos/yV0nQYOgAvI/download?force=true",
         "https://unsplash.com/photos/hrZ6ZnheaYk/download?force=true"
     )
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
